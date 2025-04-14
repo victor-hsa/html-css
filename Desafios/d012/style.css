@@ -49,6 +49,17 @@ header p{
     padding-bottom: 50px;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+}
+
 section.normal{
     background-color: rgb(253, 253, 253);
 }
@@ -56,12 +67,19 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.507);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+
 }
 
 section.imagem > p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    
 }
 
 section{
