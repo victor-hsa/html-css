@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Seu Nome Completo" autocomplete="name" required maxlength="30">
+        </div>
+        <div>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required step="0.1" min="0" max="10">
+        </div>
+        <div>
+            <label for="idia">Data:</label>
+            <input type="date" name="Dia" id="idia" min="2025-01-01">
+        </div>
+        <div>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" required>
+        </div>
+        <label for="ihora">Hora:</label>
+        <input type="time" name="Hora" id="ihora">
+        <div>
+            <label for="itel">WhatsApp:</label>
+            <input type="tel" name="tel" id="itel">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
