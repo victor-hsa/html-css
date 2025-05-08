@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php">
+        <p>
+            E-mail: <input type="email" name="email" id="iemail" required >
+        </p>
+        <p>
+            Telefone: <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
