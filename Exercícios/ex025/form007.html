@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <option value="">--- Escolha a Região ---</option>
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </div>
+            <br>
+        <div>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="iprofissao" list="lstprof" placeholder="Diga Sua Profissão Atual">
+            <datalist id="lstprof">
+                <option>Administração</option>
+                <option>Auxiliar de Escritório</option>
+                <option>Professor</option>
+                <option>Advogado</option>
+            </datalist>            
+        </div>
+        <div>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe Sua Mensagem de Apoio"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+
+</body>
+</html>
