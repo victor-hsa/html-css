@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 50px;
+            display: flex;
+            flex-flow: row nowrap;/*Padrão do flex flow*/
+            justify-content: space-evenly; 
+            /*space-around = espaço em volta
+              space-between = espaço no entre
+              space-evenly = espaço uniforme
+              center = cola os itens no centro
+              flex-end = cola os itens no main-end do container
+              flex-start = cola os itens no main-star do container
+            */
+            align-items: center;
+            /*
+               justfy-start = alinha os itens no cross-start do conteiner
+               justfy-end = alinha os itens no cross-end do conteiner
+               center = centraliza os itens no centro do cross-start e cross-end */
+        }
+
+        .item{
+            background-color: blueviolet;
+            border: 1px solid yellow;
+            text-align: center;
+            width: 10vw;
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
