@@ -7,7 +7,7 @@
     <style>
         .container{
             background-color: aqua;
-            flex-flow: row wrap;
+            flex-basis: 50px;
             display: flex;
         }
 
@@ -15,18 +15,29 @@
             background-color: blueviolet;
             border: 1px solid yellow;
             text-align: center;
-            flex-basis: 100px;
+        }
+
+        #cx1{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #cx2{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        #cx3{
+            flex-shrink: 10;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
     </div>
 </body>
 </html>

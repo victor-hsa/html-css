@@ -7,7 +7,7 @@
     <style>
         .container{
             background-color: aqua;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             display: flex;
         }
 
@@ -15,7 +15,9 @@
             background-color: blueviolet;
             border: 1px solid yellow;
             text-align: center;
-            flex-basis: 100px;
+            flex-basis: 200px;
+            flex-shrink: 1; /*Por padrão, o valor de shrink é 1*/
+            flex-grow: 1; /*Por padrão, o valor de Grow é 0.*/
         }
     </style>
 </head>
@@ -24,9 +26,6 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
     </div>
 </body>
 </html>
