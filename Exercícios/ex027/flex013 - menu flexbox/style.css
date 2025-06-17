@@ -27,12 +27,15 @@ header{
 }
 
 h1{    
-    border: 1px dotted black;
-    flex: 0 0 200px;
+    /*border: 1px dotted black;*/
+    flex: 0 0 135px;
 }
 
+a{
+    width: 100px;
+}
 nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
 
     display: flex;
     flex-flow: row wrap;
@@ -52,7 +55,7 @@ nav > a{
 nav > a:hover{
     background-color: white;
     color: black;
-    transition: background-color .5s;
+    transition: background-color .2s;
 }
 
 main{
