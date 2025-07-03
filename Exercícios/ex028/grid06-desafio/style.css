@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    gap: 1px;
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
+
+    place-items: stretch stretch;
+    place-content: space-between space-between;
+}
+
+.topo{
+    border: 1px solid blue;
+    background-color: lightblue;
+    grid-area: 1/1/2/3;
+}
+
+.menu{
+    border: 1px solid yellow;
+    background-color: lightyellow;
+    grid-area: 2/1/3/3;
+}
+
+.principal{
+    border: 1px solid green;
+    background-color: lightgreen;
+    grid-area: 3/1/4/2;
+}
+
+.secundario{
+    border: 1px solid grey;
+    background-color: lightgray;
+    grid-area: 3/2/4/3;
+}
+
+.rodape{
+    border: 1px solid rgb(167, 127, 133);
+    background-color: lightpink;
+    grid-area: 4/1/5/3;
+}
